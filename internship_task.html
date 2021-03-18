@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internship Task</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>   
+    *,
+    *::before,
+    *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+    }
+    body {
+     font: 100%/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", Calibri, Verdana, sans-serif;
+     box-sizing: border-box;
+    }
+    figure {
+     text-align:center;
+    } 
+    .w3-section {
+      margin-top: 16px !important;
+      margin-bottom: 16px !important;
+    }
+    [class*="w3-border-"] {
+     border-style: solid;
+     border-width: 1px; 
+    }
+    .hover-shadow {
+    transition: background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
+    }
+    .hover-shadow:hover {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      [class*="col-"] {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+  </style>
+</head>
+<body>
+  <section>
+  <div>
+    <div class="col-6 col-s-12" style="float: left;padding:50px 30px 0px 200px;">
+      <div>
+        <figure class="mySlides" style="display: none">
+          <img src="img1.jpg" style="width:100%">
+        </figure>
+        <figure class="mySlides" style="display: none">
+          <img src="img3.jpg" style="width:100%">
+        </figure>
+        <figure class="mySlides" style="display: none">
+          <img src="img8.jpg" style="width:100%">
+        </figure>  
+        <div class="w3-row-padding w3-section">
+          <div class="col" style="float: left;width:33.33%;padding:0px 5px;">
+            <img class="demo w3-border hover-shadow" src="img1.jpg" style="width:100%;margin-bottom: -5px;" onclick="currentDiv(1)">
+          </div>
+          <div class="col" style="float: left;width:33.33%;padding:0px 5px;">
+            <img class="demo w3-border hover-shadow" src="img3.jpg" style="width:100%;margin-bottom: -5px;" onclick="currentDiv(2)">
+          </div>
+          <div class="col" style="float: left;width:33.33%;padding:0px 5px;">
+            <img class="demo w3-border hover-shadow" src="img8.jpg" style="width:100%;margin-bottom: -5px;" onclick="currentDiv(3)">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-s-12" style="float: left;padding: 50px 20px 0px 20px">
+      <h1 style="padding-bottom: 20px;padding-top: 20px"><b>Upholstered sofa</b></h1>
+      <strong><p>Kyara Upholstered Standard Bed</p></strong>
+      <strong><p style="padding-bottom: 20px">by zipcode design</p></strong>
+      <p>Anchor your living room in sophisticated style and impeccable </p>
+      <p>comfort with a single addition. Perfectly balancing wood</p>
+      <p>accents with fabric upholstry</p>
+      <br>
+      <span class="fa fa-star" style="color:mediumseagreen"></span>
+      <span class="fa fa-star" style="color:mediumseagreen"></span>
+      <span class="fa fa-star" style="color:mediumseagreen"></span>
+      <span class="fa fa-star" style="color:mediumseagreen"></span>
+      <span class="fa fa-star" style="color:mediumseagreen"></span>
+      <p><span style="color:mediumseagreen">(5.0)</span>review based on 250</p>
+      <p style="padding-top: 10px"><u>Submit Review</u></p>
+      <strong><p style="padding:30px 0px;font-size: 28px">$567</p></strong>
+      <p><span class="fa fa-clock-o"></span>  Dispatched in 7 working days</p>
+      <p><button style="padding:12px 30px;margin:10px;background-color: black;color: white">Add to Cart</button><span><button style="padding:10px 25px;background-color: white;color: black">Add to Wishlist</button></span></p>
+    </div>
+  </div>
+</section>
+  <section style="padding-top: 550px">
+    <div class="footer">
+      <div class="row">
+        <div style="float: left;width: 33.33%;padding: 10px;height: 100px;border: black 3px solid">
+          <center><div style="float: left;padding-left: 130px;">
+            <span class="fa fa-truck"></span>
+          </div>
+          <div>
+            <h4 style="padding-right: 140px">Secure Payment</h4>
+            <p style="padding-right: 100px;padding-left: 180px;padding-top: 10px;">Don't worry, your money is in secure places</p>
+          </div></center>
+        </div>
+        <div style="float: left;width: 33.33%;padding: 10px;height: 100px;border: black 3px solid">
+          <div style="float: left;padding-left: 100px;">
+            <span class="fa fa-truck"></span>
+          </div>
+          <div>
+            <h4 style="padding-right: 120px">Fast and Free delivery</h4>
+            <p style="padding-left: 145px;padding-right: 120px;padding-top: 10px">Home delivery $15,For free delivery order over $20</p>
+          </div>
+        </div>
+        <div style="float: left;width: 33.33%;padding: 10px;height: 100px;border: black 3px solid">
+          <center><div style="float: left;padding-left: 130px;">
+            <span class="fa fa-truck"></span>
+          </div>
+          <div style="float: right">
+            <h4 style="padding-right: 180px">Return Policy</h4>
+            <p style="padding-right: 150px;padding-top: 10px">No hassle return policy</p>
+          </div></center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
